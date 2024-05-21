@@ -49,6 +49,11 @@ Here's an example of how to run an R script inside an RMarkdown file:
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
 
+- IDEA: population of different racial groups in prison over Time
+  - will have to group by year, and then add up the totals in all the counties.
+  - then make new column?? (there wouldn't be the same as the amount of rows??) - maybe make new dataset?
+
+  
 ### Variable Comparison Chart
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
@@ -68,4 +73,3 @@ The last chart that you will create and include will show how a variable is dist
 - Your map needs a title
 - Your color scale needs a legend with a clear label
 - Use a map based coordinate system to set the aspect ratio of your map
-
