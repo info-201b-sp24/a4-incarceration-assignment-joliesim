@@ -46,8 +46,9 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("Chart1.R")}
-```
+``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("Chart1.R")}
+
+``````
 - **WHY DID I INCLUDE THIS CHART + EXPLANATION
 
 ### Variable Comparison Chart
