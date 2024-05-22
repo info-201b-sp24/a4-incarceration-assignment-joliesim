@@ -46,14 +46,10 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, code = readLines("Chart1.R")}
 ```
+- **WHY DID I INCLUDE THIS CHART + EXPLANATION
 
-- IDEA: population of different racial groups in prison over Time
-  - will have to group by year, and then add up the totals in all the counties.
-  - then make new column?? (there wouldn't be the same as the amount of rows??) - maybe make new dataset?
-
-  
 ### Variable Comparison Chart
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
@@ -64,6 +60,11 @@ The second chart that you will create and include will show how two different (c
 - The chart needs a clear title 
 - If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
 
+``````{r, echo = FALSE, code = readLines("Chart2.R")}
+```
+
+- **WHY DID I INCLUDE THIS CHART + EXPLANATION
+
 ### Map
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
@@ -73,3 +74,5 @@ The last chart that you will create and include will show how a variable is dist
 - Your map needs a title
 - Your color scale needs a legend with a clear label
 - Use a map based coordinate system to set the aspect ratio of your map
+
+- IDEA: whichever state has the highest total population and do a map distributing total black male prison population amongst its counties or maybe just total prison population 15-64?
