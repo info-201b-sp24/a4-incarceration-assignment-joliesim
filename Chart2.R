@@ -13,8 +13,6 @@ max_populations <- updated_data %>%
   group_by(urbanicity) %>%
   summarize(average_value = mean(total_prison_pop))
 
-head(max_populations)
-
 ggplot(max_populations, aes(x = urbanicity, y = average_value)) +
   geom_bar(stat = "identity") +
   labs(title = "Average Prison Population of County Urbanicities",
