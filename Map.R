@@ -32,7 +32,7 @@ ggplot(state_shape) +
   coord_map() +
   scale_fill_continuous(low = "blue", high = "darkblue", na.value = "lightblue") +
   labs(fill = "Black Male Prison Population",
-       title = "Distribution of Black Male Prison Population in Washington State Counties As of 2018") +
+       title = "Distribution of Black Male Prison Population in Washington State Counties As of 2016") +
   theme(axis.title = element_blank(), 
         axis.text = element_blank(), 
         axis.ticks = element_blank())
