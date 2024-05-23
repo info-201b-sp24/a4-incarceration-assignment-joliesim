@@ -5,22 +5,13 @@ output: html_document
 
 ### Introduction
 
-While many people use the terms "jail" and "prison" interchangeably, the two are in fact referencing different components of criminal justice system. Jails are shorter-term holding facilities, keeping people who are awaiting trial, sentencing, or people who are serving short sentences. Prisons are higher security, larger facilites that hold people of serious crimes and have been sentenced to long periods of incarceration. With that being said, there are many factors which cause Black people to be disproportionately represented in both jails and prisons. For prisons specifically however, the disproportion of Black people within their populations represents a greater level of injustice. For example, Black people are more likley in general to be arrested and subjected to overpolicing. Thus, higher populations in general. Then, once they are in jail and eventually reach a trial, Black people are also more likely to recieve harsher sentences than other ethnic groups for the same offenses. ([The Sentencing Project](https://www.sentencingproject.org/reports/one-in-five-ending-racial-inequity-in-incarceration/)) Furthermore, with this information I was drawn to analyze the dataset provided by the Vera Institute about prison population per county/state. With my initial understanding that Black people are disproportionately represented in American prisons, I wanted to then analyze variables such as prison populations of different ethnic groups over time. I also wanted to know if different county types affected incarceration rates since Black people are also more likley to live in poverty, in which I also analyzed the urbanicity variable with the total (county) prison populations. Lastly, I wanted to visualize the distribution of the Black male prison populations in WA counties to hopefully learn about patterns of disproportionality in our own state. 
+While many people use the terms "jail" and "prison" interchangeably, the two are in fact referencing different components of criminal justice system. Jails are shorter-term holding facilities, keeping people who are awaiting trial, sentencing, or people who are serving short sentences. Prisons are higher security, larger facilites that hold people of serious crimes and have been sentenced to long periods of incarceration. With that being said, there are many factors which cause Black people to be disproportionately represented in both jails and prisons. For prisons specifically however, the disproportion of Black people within their populations represents a greater level of injustice. For example, Black people are more likley in general to be arrested and subjected to overpolicing. Thus, higher populations in general. Then, once they are in jail and eventually reach a trial, Black people are also more likely to recieve harsher sentences than other ethnic groups for the same offenses. ([The Sentencing Project](https://www.sentencingproject.org/reports/one-in-five-ending-racial-inequity-in-incarceration/)) Furthermore, with this information I was drawn to analyze the dataset provided by the Vera Institute about prison population per county/state. With my initial understanding that Black people are disproportionately represented in American prisons, I wanted to then analyze variables such as prison populations of different ethnic groups over time. I also wanted to know if different county types affected incarceration rates since Black people are also more likley to live in poverty, in which I also analyzed the urbanicity variable with the total (county) prison populations. Lastly, I wanted to visualize the distribution of the Black male prison populations in WA counties to hopefully learn about patterns of disproportionality in our own state.
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+While the data provides prison population rates for many racial groups, many of the charts within this report take note of the disproportionality of Black populations in prison. To this extent, some important values to summarize this data include the average total prison population amongst counties in the U.S., as well as the maximum and minimum Back prison populations. Along with this, the IQR of the white prison population is also an important variable as it can be compared the max and min of the Black prison populations. While the IQR (range between the 75th and 25th percentile) for the White prison population is 142, one could make the prediction that the Black IQR is likely much higher since the maximum is 24,818 and the minimum is 4. This suggests that the 75th percentile is probably in the ten thousands and the 25th is less than a thousand, giving a far greater difference than the White IQR. These simple values already suggest the disproprotionately of minority groups in prison populations. Lastly, in my map I discuss the patterns present of the Black male prison populations in Washington state. Thus, a final summary variable is the average Black male prison population amongst U.S. counties. Black males specifically, are more likely than any other racial group and gender to be imprisoned, and it is therefore an important value to note. Especially considering that the average total prison population is ~360, and the average Black male prison population is ~290.
 
-
-These will likely be calculated using your DPLYR skills, answering questions such as: 
-
-- What is the average value of my variable across all the counties (in the current year)?
-- Where is my variable the highest / lowest?
-- How much has my variable change over the last N years?
-
-Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
-
-``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("")}
+``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("summary.R")}
 
 ``````
 
@@ -43,56 +34,30 @@ How many features (columns) are in the data?
 
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
 What are possible limitations or problems with this data?   (at least 200 words)
-  -
+  - Since incarceration is a very heavy topic in general, there are many ethical questions and power dynamics to consider when looking at this data. In general, because prison and jail rates disproportionately affect minority groups, it also is important to take into account why these are the case: do certain counties have higher rates of incarceration because there is more crime, or over-policing? Do some counties have more prisoners because there is a history of bias judges/officials? Does a certain county have lack of data because prisoners did not want to give consent to their data being shared? Is this even required? Also, a limitation with this data is it only shows incarcerated rates up until 2016, so if trying to make predictions about today's rates, it is fairly outdated and predictions would likely be inaccurate. To that extent, this data also dates back until 1983, yet a decent amount of the ethnic population values are not found in the earlier dates, so it is also not as reliable to make predictions preceding the 21st century. Additionally, it is important to remember that this data is a combination of multiple data collections, in which issues of true accuracy and potential error as data is cross-compared must be considered, especially in a large dataset like this one.
 
 
 ### Trends Over Time Chart
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - This may mean showing the same measure for different locations or different racial groups. Think carefully about a meaningful comparison of locations (e.g., the top 10 counties in a state, top 10 states, etc.)
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
+My first chart displays the total prison population of different ethnic groups over time. I included this chart because a major theme of this project is to recognize disproportionate rates of incarceration amongst racial groups, and through this line graph this concept is very clear. This graph shows that Black people have almost always been the most representated racial group in prisons over the course of over 20 years. Simultaneously, the visualization also shows that Native American, AAPI, and other racial groups have consistently had very low incarcerated rates compared to Black, White, and Latin racial groups.
 
 ``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("Chart1.R")}
 
 ``````
-- **WHY DID I INCLUDE THIS CHART + EXPLANATION
+
 
 ### Variable Comparison Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
-
+My second chart compares the different county urbanicities to their average prison population. When thinking about rates of incarceration in different locations, I was interested in seeing if the prominence and advancement of the county affected incarceration rates. Thus, I chose this chart to discover any patterns in how ubrbanicity affected incarceration. Looking at the bar graph, it is clear that urban counties by far have the highest incarceration rates, and rural ones average fairly low rates. In the middle however, small/mid counties and suburban counties have very similar rates.
 
 ``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("Chart2.R")}
 
 ``````
 
 
-- **WHY DID I INCLUDE THIS CHART + EXPLANATION
-
 ### Map
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Your map needs a title
-- Your color scale needs a legend with a clear label
-- Use a map based coordinate system to set the aspect ratio of your map
+When looking at data, it is important to make connections and recognize aspects that affect your own life, even as just an inspector of the data. Therefore, I chose to create a map of the different rates of Black male prison populations in each Washington county. With an issue as prominent and pressing as incarceration, especially high and disproportionate rates, I wanted to end informed of which areas in my home state have the highest Black prison populations. According to The Sentencing Project cited above, Black men specifically, are even more disproportionately imprisoned, in which I wanted to map this particular trend. And from the produced map, it is clear that King County has the highest rate of Black male prisoners, which makes sense as the county also has the biggest population in general. Pierce County below it, also has a notably high population as it is a darker shade of blue. Many counties on the border of the state have very low populations as well.
 
 ``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("Map.R")}
 
