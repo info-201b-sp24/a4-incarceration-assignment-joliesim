@@ -17,23 +17,29 @@ While the data provides prison population rates for many racial groups, many of 
 
 ### The Dataset
 
-Who collected the data?  
+Who collected the data?
+
   - This data is collected by the Vera Institue, a nonprofit national research organization known for criminal justice research.
 
 How was the data collected or generated?
+
   - This data was collected by Vera's analyzation of two other data collections from the Bureau of Justice Statistics: the Census of Jails, which covers all jails and is performed every 5-7 years since 1970; and the Annual Survey of Jails, which covers ~1/3 of all jails but covers almost all of the biggest jails in the country.
 
 Why was the data collected?
+
   - The Vera Institute recognizes that incarceration data has typically been recorded at the state level, which can display trends fairly broadly. Therefore, this data was collected in order to get more accurate and informative data on incarcerated rates. Especially since it is the county-level judges and officials which regulate who goes to jail and prison.
 
 How many observations (rows) are in your data?  
+
   - There are 153,811 observations in this dataset.
 
 How many features (columns) are in the data?  
+
   - There are 36 features in the data.
 
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+What are possible limitations or problems with this data?
+
   - Since incarceration is a very heavy topic in general, there are many ethical questions and power dynamics to consider when looking at this data. In general, because prison and jail rates disproportionately affect minority groups, it also is important to take into account why these are the case: do certain counties have higher rates of incarceration because there is more crime, or over-policing? Do some counties have more prisoners because there is a history of bias judges/officials? Does a certain county have lack of data because prisoners did not want to give consent to their data being shared? Is this even required? Also, a limitation with this data is it only shows incarcerated rates up until 2016, so if trying to make predictions about today's rates, it is fairly outdated and predictions would likely be inaccurate. To that extent, this data also dates back until 1983, yet a decent amount of the ethnic population values are not found in the earlier dates, so it is also not as reliable to make predictions preceding the 21st century. Additionally, it is important to remember that this data is a combination of multiple data collections, in which issues of true accuracy and potential error as data is cross-compared must be considered, especially in a large dataset like this one.
 
 
