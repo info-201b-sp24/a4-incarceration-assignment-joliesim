@@ -24,7 +24,7 @@ ggplot(data_long, aes(x = year, y = population, color = ethnic_group)) +
   geom_path(stat = "identity") +
   labs(title = "Total Prison Population of Ethnic Groups Over Time",
        x = "Year",
-       y = "Total Population",
+       y = "Total Prison Population",
        color = "Ethnic Group") +
   scale_x_continuous(breaks = seq(1990, 2016, by = 2)) +
   theme_minimal() + 
