@@ -5,11 +5,12 @@ output: html_document
 
 ### Introduction
 
-An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
+While many people use the terms "jail" and "prison" interchangeably, the two are in fact referencing different components of criminal justice system. Jails are shorter-term holding facilities, keeping people who are awaiting trial, sentencing, or people who are serving short sentences. Prisons are higher security, larger facilites that hold people of serious crimes and have been sentenced to long periods of incarceration. With that being said, there are many factors which cause Black people to be disproportionately represented in both jails and prisons. For prisons specifically however, the disproportion of Black people within their populations represents a greater level of injustice. For example, Black people are more likley in general to be arrested and subjected to overpolicing. Thus, higher populations in general. Then, once they are in jail and eventually reach a trial, Black people are also more likely to recieve harsher sentences than other ethnic groups for the same offenses. ([The Sentencing Project](https://www.sentencingproject.org/reports/one-in-five-ending-racial-inequity-in-incarceration/)) Furthermore, with this information I was drawn to analyze the dataset provided by the Vera Institute about prison population per county/state. With my initial understanding that Black people are disproportionately represented in American prisons, I wanted to then analyze variables such as prison populations of different ethnic groups over time. I also wanted to know if different county types affected incarceration rates since Black people are also more likley to live in poverty, in which I also analyzed the urbanicity variable with the total (county) prison populations. Lastly, I wanted to visualize the distribution of the Black male prison populations in WA counties to hopefully learn about patterns of disproportionality in our own state. 
 
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+
 
 These will likely be calculated using your DPLYR skills, answering questions such as: 
 
@@ -19,19 +20,33 @@ These will likely be calculated using your DPLYR skills, answering questions suc
 
 Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
 
+``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("")}
+
+``````
+
 ### The Dataset
 
 Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
+  - This data is collected by the Vera Institue, a nonprofit national research organization known for criminal justice research.
+
+How was the data collected or generated?
+  - This data was collected by Vera's analyzation of two other data collections from the Bureau of Justice Statistics: the Census of Jails, which covers all jails and is performed every 5-7 years since 1970; and the Annual Survey of Jails, which covers ~1/3 of all jails but covers almost all of the biggest jails in the country.
+
+Why was the data collected?
+  - The Vera Institute recognizes that incarceration data has typically been recorded at the state level, which can display trends fairly broadly. Therefore, this data was collected in order to get more accurate and informative data on incarcerated rates. Especially since it is the county-level judges and officials which regulate who goes to jail and prison.
+
 How many observations (rows) are in your data?  
+  - There are 153,811 observations in this dataset.
+
 How many features (columns) are in the data?  
+  - There are 36 features in the data.
+
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
 What are possible limitations or problems with this data?   (at least 200 words)
+  -
 
 
 ### Trends Over Time Chart
-
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
 The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
@@ -61,8 +76,11 @@ The second chart that you will create and include will show how two different (c
 - The chart needs a clear title 
 - If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
 
-``````{r, echo = FALSE, code = readLines("Chart2.R")}
-```
+
+``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("Chart2.R")}
+
+``````
+
 
 - **WHY DID I INCLUDE THIS CHART + EXPLANATION
 
@@ -76,4 +94,6 @@ The last chart that you will create and include will show how a variable is dist
 - Your color scale needs a legend with a clear label
 - Use a map based coordinate system to set the aspect ratio of your map
 
-- IDEA: whichever state has the highest total population and do a map distributing total black male prison population amongst its counties or maybe just total prison population 15-64?
+``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("Map.R")}
+
+``````
