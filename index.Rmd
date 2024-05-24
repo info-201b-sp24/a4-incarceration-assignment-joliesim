@@ -61,6 +61,7 @@ My second chart compares the different county urbanicities to their average pris
 ``````
 
 
+
 ### Map
 
 When looking at data, it is important to make connections and recognize aspects that affect your own life, even as just an inspector of the data. Therefore, I chose to create a map of the different rates of Black male prison populations in each Washington county. With an issue as prominent and pressing as incarceration, especially high and disproportionate rates, I wanted to end informed of which areas in my home state have the highest Black prison populations. According to The Sentencing Project cited above, Black men specifically, are even more disproportionately imprisoned, in which I wanted to map this particular trend. And from the produced map, it is clear that King County has the highest rate of Black male prisoners, which makes sense as the county also has the biggest population in general. Pierce County below it, also has a notably high population as it is a darker shade of blue. Many counties on the border of the state have very low populations as well.
