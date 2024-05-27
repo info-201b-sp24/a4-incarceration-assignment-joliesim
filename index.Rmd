@@ -56,7 +56,7 @@ My first chart displays the total prison population of different ethnic groups o
 
 My second chart compares the different county urbanicities to their average prison population. When thinking about rates of incarceration in different locations, I was interested in seeing if the prominence and advancement of the county affected incarceration rates. Thus, I chose this chart to discover any patterns in how ubrbanicity affected incarceration. Looking at the bar graph, it is clear that urban counties by far have the highest incarceration rates, and rural ones average fairly low rates. In the middle however, small/mid counties and suburban counties have very similar rates.
 
-```{r, echo = FALSE, message = FALSE, code = readLines("Chart2.R")}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("Chart2.R")}
 
 ```
 
